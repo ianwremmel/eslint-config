@@ -1,7 +1,7 @@
 # @ianwremmel/eslint-config
 
-[![CircleCI](https://circleci.com/gh/ianwremmel/eslint-config.svg?style=svg)](https://circleci.com/gh/ianwremmel/eslint-config)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0c3a90848b8a4d7b85a915772bfd8439)](https://www.codacy.com/app/design_2/eslint-config?utm_source=github.com&utm_medium=referral&utm_content=ianwremmel/eslint-config&utm_campaign=badger)
+[![CircleCI](https://img.shields.io/circleci/project/github/ianwremmel/eslint-config.svg?style=flat-square)](https://circleci.com/gh/ianwremmel/eslint-config)
+[![Codacy grade](https://img.shields.io/codacy/grade/e27821fb6289410b8f58338c7e0bc686.svg?style=flat-square)](https://www.codacy.com/app/design_2/eslint-config?utm_source=github.com&utm_medium=referral&utm_content=ianwremmel/eslint-config&utm_campaign=badger)
 [![npm (scoped)](https://img.shields.io/npm/v/@ianwremmel/eslint-config.svg?style=flat-square)](https://www.npmjs.com/package/@ianwremmel/eslint-config)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
