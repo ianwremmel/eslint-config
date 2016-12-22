@@ -1,7 +1,7 @@
 {
   "name": "@ianwremmel/eslint-config",
   "version": "0.0.0-development",
-  "description": "Common eslint rules for my projects",
+  "description": "Common eslint rules for @ianwremmel's projects",
   "main": "./es2015.js",
   "scripts": {
     "test": "eslint .",
