@@ -3,9 +3,23 @@
 module.exports = {
   extends: './es2015.js',
   parser: 'babel-eslint',
+  parserOptions: {
+    ecmaVersion: 2015,
+    sourceType: 'module'
+  },
   plugins: [
     'import'
   ],
+  //
+  // Strict Mode
+  // http://eslint.org/docs/rules/#strict-mode
+  //
+  strict: [
+    // No need becuase sourceType module
+    2,
+    'never'
+  ],
+
   //
   // Import Plugin
   // https://www.npmjs.com/package/eslint-plugin-import
