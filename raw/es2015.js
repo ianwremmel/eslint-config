@@ -7,18 +7,9 @@ module.exports = {
   extends: './es5.js',
   parserOptions: {
     ecmaVersion: 2015,
-    sourceType: 'module'
+    sourceType: 'script'
   },
   rules: {
-    //
-    // Strict Mode
-    // http://eslint.org/docs/rules/#strict-mode
-    //
-    strict: [
-      // No need because modules force strict mode
-      2,
-      'never'
-    ],
     //
     // Stylistic Issues
     // http://eslint.org/docs/rules/#stylistic-issues
