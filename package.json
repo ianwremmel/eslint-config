@@ -4,7 +4,16 @@
   "description": "Common eslint rules for @ianwremmel's projects",
   "main": "./es2015.js",
   "scripts": {
-    "test": "eslint .",
+    "lint": "eslint .",
+    "pretest": "npm run --silent lint",
+    "test": "npm run --silent test:es5 && npm run --silent test:es2015 && npm run --silent test:es2015-imports && npm run --silent test:mocha && npm run --silent test:react && npm run --silent test:script",
+    "test:es5": "eslint -c ./es5.js ./test/es5.js",
+    "test:es2015": "eslint -c ./es2015.js ./test/es2015.js",
+    "test:es2015-imports": "eslint -c ./es2015-imports.js ./test/es2015-imports.js",
+    "test:mocha": "eslint -c ./mocha.js ./test/mocha.js",
+    "test:react": "eslint -c ./react.js ./test/react.js",
+    "test:script": "eslint -c ./script.js ./test/script.js",
+
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "Ian W. Remmel <design@ianwremmel.com>",
