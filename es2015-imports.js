@@ -2,7 +2,7 @@
 
 module.exports = {
   extends: [
-    './raw/es2015.js',
-    './raw/import.js'
+    './es2015',
+    '@ciscospark/eslint-config/import'
   ]
 };

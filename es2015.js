@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-  extends: './raw/es2015.js'
+  extends: '@ciscospark/eslint-config/es2015'
 };
