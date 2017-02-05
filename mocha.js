@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-  extends: './raw/mocha.js'
+  extends: '@ciscospark/eslint-config/mocha'
 };

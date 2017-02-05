@@ -35,5 +35,8 @@
     "verifyConditions": [
       "condition-circle"
     ]
+  },
+  "dependencies": {
+    "@ciscospark/eslint-config": "^0.7.34"
   }
 }
