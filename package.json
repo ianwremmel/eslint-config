@@ -46,6 +46,6 @@
     ]
   },
   "dependencies": {
-    "@ciscospark/eslint-config": "^0.7.34"
+    "@ciscospark/eslint-config": "^0.8.0"
   }
 }
