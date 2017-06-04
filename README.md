@@ -43,22 +43,14 @@ Add the following to your eslintrc to use es2015 syntax *without* import/export
 extends: "@ianwremmel"
 ```
 
-For import/export
-
-```yaml
-extends: "@ianwremmel/eslint-config/es2015-imports"
-```
-
-> import/export is kept out of the default ruleset because the rest of the rules *should* work without a build step in adequately recent node versions.
-
 Additional rules:
 
 - @ianwremmel/eslint-config/es5
+- @ianwremmel/eslint-config/esnext
 - @ianwremmel/eslint-config/mocha
-- @ianwremmel/eslint-config/react
 - @ianwremmel/eslint-config/script
 
-> Except for es5, all rulesets should be used in conjuction with the default, es5, or es2015-imports *and be listed after the ruleset with which they're combined*.
+> Except for es5, all rulesets should be used in conjuction with the defaultor es5 *and be listed after the ruleset with which they're combined*.
 
 ## Contribute
 

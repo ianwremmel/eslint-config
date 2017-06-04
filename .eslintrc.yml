@@ -1,2 +1,4 @@
 extends: "./es5.js"
 root: true
+env:
+  node: true
