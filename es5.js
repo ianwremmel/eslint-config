@@ -4,9 +4,6 @@
 // eslint website.
 /* eslint-disable sort-keys */
 
-// Numbers in this file are not magic.
-/* eslint-disable no-magic-numbers */
-
 module.exports = {
   parserOptions: {
     ecmaVersion: 5,
@@ -77,7 +74,10 @@ module.exports = {
     ],
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
-    'class-methods-use-this': 'error',
+    // warning for now: getters are a useful way to create read-only static
+    // properties without pulling in babel. (e.g. have a getter on an http error
+    // for the status code)
+    'class-methods-use-this': 'warn',
     complexity: ['error', 7],
     'consistent-return': 'error',
     curly: ['error', 'all'],
@@ -85,9 +85,7 @@ module.exports = {
     'dot-location': ['error', 'property'],
     'dot-notation': [
       'error',
-      {
-        allowKeywords: true
-      }
+      {allowKeywords: true}
     ],
     eqeqeq: 'error',
     'guard-for-in': 'error',
@@ -124,7 +122,7 @@ module.exports = {
     'no-labels': 'error',
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
-    'no-magic-numbers': 'error',
+    'no-magic-numbers': 'off',
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
     'no-new': 'error',
@@ -134,17 +132,12 @@ module.exports = {
     'no-octal-escape': 'error',
     'no-param-reassign': [
       'error',
-      {
-        // I'm probably going to regret this
-        props: true
-      }
+      {props: false}
     ],
     'no-proto': 'error',
     'no-redeclare': [
       'error',
-      {
-        builtinGlobals: true
-      }
+      {builtinGlobals: true}
     ],
     'no-restricted-properties': 'off',
     'no-return-assign': ['error', 'always'],
@@ -207,7 +200,7 @@ module.exports = {
     'no-mixed-requires': 'error',
     'no-new-require': 'error',
     'no-path-concat': 'error',
-    'no-process-env': 'error',
+    'no-process-env': 'off',
     'no-process-exit': 'error',
     'no-restricted-imports': 'off',
     'no-restricted-modules': 'off',
@@ -221,9 +214,7 @@ module.exports = {
     'brace-style': [
       'error',
       'stroustrup',
-      {
-        allowSingleLine: true
-      }
+      {allowSingleLine: true}
     ],
     camelcase: 'error',
     'capitalized-comments': 'off',
@@ -249,9 +240,7 @@ module.exports = {
     indent: [
       'error',
       2,
-      {
-        SwitchCase: 1
-      }
+      {SwitchCase: 1}
     ],
     'key-spacing': [
       'error',
@@ -263,9 +252,7 @@ module.exports = {
     'keyword-spacing': 'error',
     'line-comment-position': [
       'error',
-      {
-        position: 'above'
-      }
+      {position: 'above'}
     ],
     'linebreak-style': 'error',
     'lines-around-comment': 'off',
@@ -278,9 +265,7 @@ module.exports = {
     'max-statements': ['error', 30],
     'max-statements-per-line': [
       'error',
-      {
-        max: 1
-      }
+      {max: 1}
     ],
     'multiline-ternary': ['error', 'never'],
     'new-cap': [
@@ -298,9 +283,7 @@ module.exports = {
     'newline-before-return': 'error',
     'newline-per-chained-call': [
       'error',
-      {
-        ignoreChainWithDepth: 1
-      }
+      {ignoreChainWithDepth: 2}
     ],
     'no-array-constructor': 'error',
     'no-bitwise': 'error',
@@ -312,18 +295,14 @@ module.exports = {
     'no-multi-assign': 'off',
     'no-multiple-empty-lines': [
       'error',
-      {
-        max: 2
-      }
+      {max: 2}
     ],
     'no-negated-condition': 'error',
     'no-nested-ternary': 'error',
     'no-new-object': 'error',
     'no-plusplus': [
       'error',
-      {
-        allowForLoopAfterthoughts: true
-      }
+      {allowForLoopAfterthoughts: true}
     ],
     'no-restricted-syntax': 'off',
     'no-tabs': 'error',
@@ -333,7 +312,19 @@ module.exports = {
     'no-unneeded-ternary': 'error',
     'no-whitespace-before-property': 'error',
     'nonblock-statement-body-position': 'off',
-    'object-curly-newline': ['error', 'always'],
+    'object-curly-newline': [
+      'error',
+      {
+        ObjectExpression: {
+          multiline: true,
+          minProperties: 2
+        },
+        ObjectPattern: {
+          multiline: true,
+          minProperties: 3
+        }
+      }
+    ],
     'object-curly-spacing': ['error', 'never'],
     'object-property-newline': 'error',
     'one-var': 'off',

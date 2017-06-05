@@ -4,13 +4,8 @@
 // eslint website.
 /* eslint-disable sort-keys */
 
-// Numbers in this file are not magic.
-/* eslint-disable no-magic-numbers */
-
 module.exports = {
-  env: {
-    mocha: true
-  },
+  env: {mocha: true},
   plugins: [
     'mocha'
   ],
