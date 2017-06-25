@@ -10,6 +10,9 @@ module.exports = {
     ecmaVersion: 6,
     sourceType: 'script'
   },
+  plugins: [
+    'import'
+  ],
   rules: {
     quotes: ['error', 'backtick'],
     //
@@ -58,6 +61,17 @@ module.exports = {
     'sort-imports': 'error',
     'symbol-description': 'error',
     'template-curly-spacing': ['error', 'never'],
-    'yield-star-spacing': ['error', 'after']
+    'yield-star-spacing': ['error', 'after'],
+
+    //
+    // Static Analysis
+    // https://www.npmjs.com/package/eslint-plugin-import
+    //
+
+    'import/no-unresolved': [
+      'error',
+      {commonjs: true}
+    ]
+
   }
 };
