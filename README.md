@@ -1,6 +1,6 @@
 # @ianwremmel/eslint-config
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/ianwremmel/eslint-config.svg)](https://greenkeeper.io/)
+[![Dependabot badge](https://img.shields.io/badge/Dependabot-active-brightgreen.svg)](https://dependabot.com/)
 [![CircleCI](https://img.shields.io/circleci/project/github/ianwremmel/eslint-config.svg?style=flat-square)](https://circleci.com/gh/ianwremmel/eslint-config)
 [![Codacy grade](https://img.shields.io/codacy/grade/e27821fb6289410b8f58338c7e0bc686.svg?style=flat-square)](https://www.codacy.com/app/design_2/eslint-config?utm_source=github.com&utm_medium=referral&utm_content=ianwremmel/eslint-config&utm_campaign=badger)
 [![npm (scoped)](https://img.shields.io/npm/v/@ianwremmel/eslint-config.svg?style=flat-square)](https://www.npmjs.com/package/@ianwremmel/eslint-config)
