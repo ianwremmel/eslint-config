@@ -1,9 +1,0 @@
-machine:
-  node:
-    version: 7
-
-deployment:
-  production:
-    branch: master
-    commands:
-    - npm run semantic-release || true
