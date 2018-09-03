@@ -26,7 +26,7 @@
     "url": "https://github.com/ianwremmel/eslint-config.git"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.0",
+    "babel-eslint": "^9.0.0",
     "condition-circle": "^2.0.0",
     "eslint": "^4.1.0",
     "eslint-plugin-import": "^2.6.0",
